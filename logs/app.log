@@ -1,0 +1,13 @@
+[2019-06-08 16:57:01] UTN FRA LOGGER.INFO: metodo=GET, PATH=octavio, autoridad=localhost [] {"uid":"163437b"}
+[2019-06-08 16:57:01] UTN FRA LOGGER.INFO: Slim-Skeleton '/' route [] {"uid":"163437b"}
+[2019-06-08 16:57:08] UTN FRA LOGGER.INFO: metodo=POST, PATH=octavio, autoridad=localhost [] {"uid":"af145f5"}
+[2019-06-08 16:57:49] UTN FRA LOGGER.INFO: metodo=GET, RUTA=octavio, autoridad=localhost [] {"uid":"0a52545"}
+[2019-06-08 16:57:49] UTN FRA LOGGER.INFO: Slim-Skeleton '/' route [] {"uid":"0a52545"}
+[2019-06-08 16:57:49] UTN FRA LOGGER.INFO: metodo=GET, RUTA=octavio, autoridad=localhost [] {"uid":"07dc157"}
+[2019-06-08 16:57:49] UTN FRA LOGGER.INFO: Slim-Skeleton '/' route [] {"uid":"07dc157"}
+[2019-06-08 16:57:49] UTN FRA LOGGER.INFO: metodo=GET, RUTA=octavio, autoridad=localhost [] {"uid":"6b220c8"}
+[2019-06-08 16:57:49] UTN FRA LOGGER.INFO: Slim-Skeleton '/' route [] {"uid":"6b220c8"}
+[2019-06-08 16:57:50] UTN FRA LOGGER.INFO: metodo=GET, RUTA=octavio, autoridad=localhost [] {"uid":"4054f0e"}
+[2019-06-08 16:57:50] UTN FRA LOGGER.INFO: Slim-Skeleton '/' route [] {"uid":"4054f0e"}
+[2019-06-08 16:59:07] UTN FRA LOGGER.INFO: metodo=GET, URI=http%3A%2F%2Flocalhost%2Fbeta%2Fpublic, RUTA=octavio, autoridad=localhost [] {"uid":"039b25d"}
+[2019-06-08 16:59:07] UTN FRA LOGGER.INFO: Slim-Skeleton '/' route [] {"uid":"039b25d"}
