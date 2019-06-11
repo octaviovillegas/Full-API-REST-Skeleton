@@ -28,7 +28,7 @@ return function (App $app) {
         $capsule = new \Illuminate\Database\Capsule\Manager;
         $capsule->addConnection($container['settings']['db']);
 
-        $capsule->setAsGlobal();
+       // $capsule->setAsGlobal();
         $capsule->bootEloquent();
 
         return $capsule;

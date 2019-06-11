@@ -8,7 +8,7 @@ use App\Models\ORM\cdApi;
 
 
 include_once __DIR__ . '/../../src/app/modelORM/cd.php';
-include_once __DIR__ . '/../../src/app/modelORM/cdApi.php';
+include_once __DIR__ . '/../../src/app/modelORM/cdControler.php';
 
 return function (App $app) {
     $container = $app->getContainer();

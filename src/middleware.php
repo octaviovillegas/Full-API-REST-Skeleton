@@ -25,6 +25,62 @@ return function (App $app) {
 	    return $response;
 	});
 
+$app->add(function ($req, $res, $next) use ($container) {
+			
+		$id="no anda";
+		  if (isset($_SERVER)) {
+
+		        if (isset($_SERVER["HTTP_X_FORWARDED_FOR"]))
+		            $id= $_SERVER["HTTP_X_FORWARDED_FOR"];
+		        
+		        if (isset($_SERVER["HTTP_CLIENT_IP"]))
+		            $id= $_SERVER["HTTP_CLIENT_IP"];
+
+		        $id= $_SERVER["REMOTE_ADDR"];
+			    }
+
+			    if (getenv('HTTP_X_FORWARDED_FOR'))
+			        $id= getenv('HTTP_X_FORWARDED_FOR');
+
+			    if (getenv('HTTP_CLIENT_IP'))
+			        $id= getenv('HTTP_CLIENT_IP');
+
+			    $id= getenv('REMOTE_ADDR');
+		$container->get('logger')->info($ip);
+		$response = $next($req, $res);
+	    return $response;
+	});
+
+
+
+
+
+function GetUserIP() {
+
+    if (isset($_SERVER)) {
+
+        if (isset($_SERVER["HTTP_X_FORWARDED_FOR"]))
+            return $_SERVER["HTTP_X_FORWARDED_FOR"];
+        
+        if (isset($_SERVER["HTTP_CLIENT_IP"]))
+            return $_SERVER["HTTP_CLIENT_IP"];
+
+        return $_SERVER["REMOTE_ADDR"];
+    }
+
+    if (getenv('HTTP_X_FORWARDED_FOR'))
+        return getenv('HTTP_X_FORWARDED_FOR');
+
+    if (getenv('HTTP_CLIENT_IP'))
+        return getenv('HTTP_CLIENT_IP');
+
+    return getenv('REMOTE_ADDR');
+}
+
+
+
+
+
 
 	$app->add(function ($req, $res, $next) {
 	    $response = $next($req, $res);

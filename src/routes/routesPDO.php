@@ -4,11 +4,11 @@ use Slim\App;
 use Slim\Http\Request;
 use Slim\Http\Response;
 use App\Models\PDO\cd;
-use App\Models\PDO\cdApi;
+use App\Models\PDO\cdControler;
 
 
 
-include_once __DIR__ . '/../../src/app/modelPDO/cdApi.php';
+include_once __DIR__ . '/../../src/app/modelPDO/cdControler.php';
 include_once __DIR__ . '/../../src/app/modelPDO/cd.php';
 
 
@@ -31,7 +31,7 @@ return function (App $app) {
    
     $app->group('/cdPDO2', function () {   
 
-        $this->get('/',cdApi::class . ':TraerTodos');   
+        $this->get('/',cdControler::class . ':TraerTodos');   
 
     });
 
