@@ -16,8 +16,12 @@ return function (App $app) {
     $routes($app);
     
 
-    // Rutas PDO
+    // Rutas ORM
     $routes = require __DIR__ . '/../src/routes/routesORM.php';
+    $routes($app);
+
+    // Rutas JWT
+    $routes = require __DIR__ . '/../src/routes/routesJWT.php';
     $routes($app);
 
 
